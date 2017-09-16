@@ -1,9 +1,5 @@
 #include <msp430.h>				
 
-
-/**
- * blink.c
- */
 void main(void)
 {
 	WDTCTL = WDTPW | WDTHOLD;		// stop watchdog timer
