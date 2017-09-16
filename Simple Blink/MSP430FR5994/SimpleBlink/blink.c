@@ -22,12 +22,12 @@ void main(void) {
     WDTCTL = WDTPW | WDTHOLD;               // Stop watchdog timer
     PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
                                             // to activate previously configured port settings
-    P1DIR |= BIT1;                          // Set P1.0 to output direction
+    P1DIR |= BIT1;                          // Set P1.1 to output direction
 
     for(;;) {
         volatile unsigned int i;            // volatile to prevent optimization
 
-        P1OUT ^= BIT1;                      // Toggle P1.0 using exclusive-OR
+        P1OUT ^= BIT1;                      // Toggle P1.1 using exclusive-OR
 
         i = 100000;                          // SW Delay
         do i--;
