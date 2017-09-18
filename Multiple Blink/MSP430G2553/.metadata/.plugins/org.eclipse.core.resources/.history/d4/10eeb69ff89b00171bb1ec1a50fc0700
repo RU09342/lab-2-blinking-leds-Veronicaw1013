@@ -1,0 +1,22 @@
+#include <msp430.h>
+
+void main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
+    P1DIR |= BIT6;                  // configure P1.6 as output
+   // P1DIR |= BIT0;                  // configure P1.0 as output
+
+    volatile unsigned int i;
+    volatile unsigned int j;    // volatile to prevent optimization
+
+    for(;;)
+    {
+
+        P1OUT ^= BIT6;  // toggle P1.6
+        for(i=100000; i>0; i--);     // delay
+
+    }
+
+}
+
+
