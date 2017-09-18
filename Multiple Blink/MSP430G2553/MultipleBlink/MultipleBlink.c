@@ -6,19 +6,20 @@ void main(void)
     P1DIR |= BIT6;                  // configure P1.6 as output
     P1DIR |= BIT0;                  // configure P1.0 as output
 
-    volatile unsigned int i;   // volatile to prevent optimization
+   int i = 0;   // volatile to prevent optimization
+   int j = 0;
 
 
     while(1)
     {
-
-        P1OUT ^= BIT6;   // toggle P1.6
-
-        for(i=10000; i>0; i--){
-        if(i % 500 == 0){
-            P1OUT ^= BIT0;
+        i ++;
+        j++;
+        if(i>30000)
+        {i=0;P1OUT^=BIT6;}
+        if(j>10000)
+        {j=0;P1OUT^=BIT0;}
         }
     }
-}
-}
+
+
 

@@ -198,3 +198,1265 @@ remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recomm
 ' '
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 21: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "P1OUT" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../MultipleBlink.c", line 16: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MultipleBlink.c", line 20: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 17: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "P1OUT" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../MultipleBlink.c", line 15: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MultipleBlink.c", line 21: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 22: warning #129-D: loop is not reachable
+"../MultipleBlink.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MultipleBlink.c", line 27: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "P1OUT" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../MultipleBlink.c", line 25: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 22: warning #129-D: loop is not reachable
+"../MultipleBlink.c", line 17: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MultipleBlink.c", line 27: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "P1OUT" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../MultipleBlink.c", line 25: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../MultipleBlink.c", line 23: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 18: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 20: warning #189-D: use of "=" where "==" may have been intended
+"../MultipleBlink.c", line 20: error #18: expected a ")"
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 20: error #18: expected a ")"
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 20: warning #189-D: use of "=" where "==" may have been intended
+"../MultipleBlink.c", line 20: error #18: expected a ")"
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 26: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 23: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 23: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 32: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 36: error #113: expected "while"
+"../MultipleBlink.c", line 36: error #126: expected a "("
+"../MultipleBlink.c", line 36: error #29: expected an expression
+"../MultipleBlink.c", line 36: error #18: expected a ")"
+"../MultipleBlink.c", line 36: error #66: expected a ";"
+5 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 42: error #113: expected "while"
+"../MultipleBlink.c", line 42: error #126: expected a "("
+"../MultipleBlink.c", line 42: error #29: expected an expression
+"../MultipleBlink.c", line 42: error #18: expected a ")"
+"../MultipleBlink.c", line 42: error #66: expected a ";"
+At end of source: error #68: expected a "}"
+6 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 42: error #113: expected "while"
+"../MultipleBlink.c", line 42: error #126: expected a "("
+"../MultipleBlink.c", line 42: error #29: expected an expression
+"../MultipleBlink.c", line 42: error #18: expected a ")"
+"../MultipleBlink.c", line 42: error #66: expected a ";"
+5 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 33: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 30: warning #129-D: loop is not reachable
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 24: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 25: warning #70-D: integer conversion resulted in truncation
+"../MultipleBlink.c", line 27: error #113: expected "while"
+"../MultipleBlink.c", line 29: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MultipleBlink.c", line 29: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 22: warning #70-D: integer conversion resulted in truncation
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 12: error #68: expected a "}"
+"../MultipleBlink.c", line 14: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 14: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 15: error #171: expected a declaration
+"../MultipleBlink.c", line 17: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 20: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 23: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 14: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 12: error #68: expected a "}"
+"../MultipleBlink.c", line 14: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 14: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 15: error #171: expected a declaration
+"../MultipleBlink.c", line 17: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 20: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 23: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 14: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 10: error #68: expected a "}"
+"../MultipleBlink.c", line 14: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 14: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 15: error #171: expected a declaration
+"../MultipleBlink.c", line 17: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 20: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 23: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 10: remark #1535-D: (ULP 8.1) variable "CTR1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MultipleBlink.c", line 14: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 10: error #68: expected a "}"
+"../MultipleBlink.c", line 14: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 14: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 15: error #171: expected a declaration
+"../MultipleBlink.c", line 17: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 20: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 23: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 10: remark #1535-D: (ULP 8.1) variable "CTR1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MultipleBlink.c", line 11: remark #1535-D: (ULP 8.1) variable "CTR2" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MultipleBlink.c", line 14: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 10: error #68: expected a "}"
+"../MultipleBlink.c", line 12: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 12: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 13: error #171: expected a declaration
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 12: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 10: error #68: expected a "}"
+"../MultipleBlink.c", line 12: error #66: expected a ";"
+"../MultipleBlink.c", line 13: error #171: expected a declaration
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 3: error #66: expected a ";"
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+14 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 15: error #29: expected an expression
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #29: expected an expression
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #29: expected an expression
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 23: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 23: error #66: expected a ";"
+"../MultipleBlink.c", line 2: remark #1535-D: (ULP 8.1) variable "j" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+17 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 15: error #29: expected an expression
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #29: expected an expression
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #29: expected an expression
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 23: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 23: error #66: expected a ";"
+"../MultipleBlink.c", line 2: remark #1535-D: (ULP 8.1) variable "j" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+17 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 15: error #7: unrecognized token
+"../MultipleBlink.c", line 15: error #29: expected an expression
+"../MultipleBlink.c", line 16: error #7: unrecognized token
+"../MultipleBlink.c", line 16: error #29: expected an expression
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #29: expected an expression
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 19: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #29: expected an expression
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 22: error #7: unrecognized token
+"../MultipleBlink.c", line 2: remark #1535-D: (ULP 8.1) variable "j" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+17 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 12: error #68: expected a "}"
+"../MultipleBlink.c", line 14: warning #78-D: this declaration has no storage class or type specifier
+"../MultipleBlink.c", line 14: error #58: this operator is not allowed in a constant expression
+"../MultipleBlink.c", line 15: error #171: expected a declaration
+"../MultipleBlink.c", line 17: error #7: unrecognized token
+"../MultipleBlink.c", line 18: error #7: unrecognized token
+"../MultipleBlink.c", line 20: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 21: error #7: unrecognized token
+"../MultipleBlink.c", line 23: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+"../MultipleBlink.c", line 24: error #7: unrecognized token
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../MultipleBlink.c", line 14: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+16 errors detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 9: error #20: identifier "i" is undefined
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 9: warning #179-D: variable "i" was declared but never referenced
+"../MultipleBlink.c", line 9: remark #1535-D: (ULP 8.1) variable "i" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MultipleBlink.c", line 22: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 24: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'MultipleBlink.obj' failed
+"../MultipleBlink.c", line 15: error #20: identifier "j" is undefined
+1 error detected in the compilation of "../MultipleBlink.c".
+gmake: *** [MultipleBlink.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MultipleBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../MultipleBlink.c'
+'Invoking: MSP430 Compiler'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
+'Finished building: ../MultipleBlink.c'
+' '
+'Building target: MultipleBlink.out'
+'Invoking: MSP430 Linker'
+"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MultipleBlink.map" --heap_size=80 --stack_size=80 -i"D:/Embedded/ccsv7/ccs_base/msp430/include" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/lib" -i"D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MultipleBlink_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MultipleBlink.out" "./MultipleBlink.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: MultipleBlink.out'
+' '
+
+**** Build Finished ****

@@ -5,7 +5,6 @@
 'Building file: ../MultipleBlink.c'
 'Invoking: MSP430 Compiler'
 "D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Multiple Blink/MSP430G2553/MultipleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MultipleBlink.d"  "../MultipleBlink.c"
-"../MultipleBlink.c", line 18: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
 'Finished building: ../MultipleBlink.c'
 ' '
 'Building target: MultipleBlink.out'
