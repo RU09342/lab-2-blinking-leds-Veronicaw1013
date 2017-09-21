@@ -2,6 +2,7 @@
 
 void main(void)
 {
+    PM5CTL0 &= ~LOCKLPM5;
     WDTCTL = WDTPW | WDTHOLD;       // stop watchdog timer
     P2DIR |= BIT0;                  // configure P1.6 as output
     P1DIR |= BIT0;                  // configure P1.0 as output
