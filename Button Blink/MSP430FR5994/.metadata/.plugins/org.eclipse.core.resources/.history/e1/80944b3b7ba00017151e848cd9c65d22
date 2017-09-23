@@ -1,0 +1,18 @@
+#include <msp430.h> 
+
+int main( void )
+  {
+    int i;
+    // Stop watchdog timer to prevent time out reset
+    WDTCTL = WDTPW + WDTHOLD;
+  P1DIR=BIT0+BIT1;         // make pin 0 and 6 output
+    P1OUT=BIT0+BIT1;        // make pin 0 and 6 high
+    while(1)
+    {
+               if((P1IN & BIT3) == 0)
+              {
+                     P1OUT^=(BIT0+BIT1);    // toggle the led's
+               }  
+              for(i=0;i<27000;i++);    // delay between the toggle.
+    }
+}

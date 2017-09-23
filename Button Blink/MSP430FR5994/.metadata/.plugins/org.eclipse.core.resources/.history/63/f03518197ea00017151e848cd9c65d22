@@ -1,0 +1,16 @@
+#include <msp430.h> 
+
+void main(void) {
+volatile int i;
+WDTCTL = WDTPW | WDTHOLD;
+P1DIR |= BIT0+BIT1;
+P1OUT |= BIT0+BIT1;// make pin 0 and 6 high
+while(1)
+      {
+                 if((P5IN & BIT5) == 0)
+                {
+                       P1OUT^=(BIT0+BIT1);    // toggle the led's
+                 }  
+                for(i=0;i<27000;i++);    // delay between the toggle.
+      }
+  }

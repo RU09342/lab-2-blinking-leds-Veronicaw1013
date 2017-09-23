@@ -1,0 +1,29 @@
+#include <msp430.h>
+
+#define TRUE 1==1
+int i = 0;
+
+void main (void) {
+
+PM5CTL0 &= ~LOCKLPM5;
+// Watchdog setup
+WDTCTL = WDTPW + WDTHOLD; // stop using the watchdog
+
+// LED initial setup
+P1DIR |= BIT0; // ENABLE GREEN AND RED LED
+
+// Button setup
+P5DIR &= ~BIT5; // button is an input
+P5OUT |= BIT5; // pull-up resistor
+P5REN |= BIT5; // resistor enabled
+
+
+while (TRUE) {
+
+if ((P5IN & BIT5)==0) {
+P1OUT ^=(BIT0);
+for(i=0;i<2700; i++);
+}
+}
+}
+

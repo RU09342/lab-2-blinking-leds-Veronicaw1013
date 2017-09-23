@@ -1,0 +1,18 @@
+#include <msp430.h> 
+
+int main(void)
+{
+unsigned int i;//delay variable
+PM5CTL0 &= ~LOCKLPM5;
+WDTCTL = WDTPW | WDTHOLD;// Stop watchdog timer
+P1DIR=BIT0;//set p1.0 and p1.6 as output for led while p1.3 as input for switch
+P1OUT=BIT0;//turn red led on by default
+while(1)
+{
+if((P5IN&BIT5) !== BIT5)// check if switch is pressed or not
+{
+P1OUT^=BIT0;//if pressed toggle the state of led
+for(i=0;i<30000;i++);//small delay to counter multiple key press
+}
+}
+}
