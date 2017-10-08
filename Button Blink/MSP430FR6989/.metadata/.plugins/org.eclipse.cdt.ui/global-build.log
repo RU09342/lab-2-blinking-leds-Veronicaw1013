@@ -23,3 +23,24 @@ remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recomm
 ' '
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ButtonBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'ButtonBlink.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ButtonBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'ButtonBlink.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ButtonBlink ****
+
+"D:\\Embedded\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'ButtonBlink.out' is up to date.
+
+**** Build Finished ****
