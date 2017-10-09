@@ -30,7 +30,7 @@ void do _ led( int led, int delay ) // create a function that takes in an input 
 
 	{
 
-    	P1OUT ^= led;// sets which led to toggle
+    P1OUT ^= led;// sets which led to toggle
     
    	delay _ ms( delay );// sets input to delay _ ms
     
