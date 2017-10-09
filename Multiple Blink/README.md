@@ -15,7 +15,7 @@ For the MSP430FR2311, MSP430FR5994, and MSP430FR6989, the GPIO power-on default 
 
 PM5CTL0 &= ~LOCKLPM5;
 
-The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section.  Two integers "i" and "j" were created in order to use for counting.
+The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section. Generally, PxDIR sets the pins as input or output, where PxDIR = 0 sets an input and PxDIR = 1 sets an output. Two integers "i" and "j" were created in order to use for counting.
 
  int i =0;
  
@@ -25,7 +25,7 @@ An infinite loop was also created so the code within the loop will run forever.
 
 while(1){}
   
-Inside the loop is where the two LEDs are toggled so they can blink on the boards. The various cases for each board can be seen in the next section. Both "i" and "j" are incremented first within the loop. If i > 30000, then "i" is reset and one of the LEDs is toggled. If j >10000, then "j" is reset and the other LED is toggled. Different values other than 30000 and 10000 could be used in order to get different blink speeds. 
+Inside the loop is where the two LEDs are toggled so they can blink on the boards. The various cases for each board can be seen in the next section. Generally, PxOUT contains the value to be output from the port. When I/O is configured to output mode: 0b = output is low, 1b = output is high. When I/O configured to input mise and pullups/pulldowns enabled: 0b = pulldown selected, 1b = pullup selected. Both "i" and "j" are incremented first within the loop. If i > 30000, then "i" is reset and one of the LEDs is toggled. If j >10000, then "j" is reset and the other LED is toggled. Different values other than 30000 and 10000 could be used in order to get different blink speeds. 
 
 i ++;
 
