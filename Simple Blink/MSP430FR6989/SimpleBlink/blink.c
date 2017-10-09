@@ -25,7 +25,7 @@ void main(void) {
     P9DIR |= BIT7;                          // Set P1.0 to output direction
 
     for(;;) {
-        volatile unsigned int i;            // volatile to prevent optimization
+        volatile unsigned int i;            //create unsigned integer i
 
         P9OUT ^= BIT7;                      // Toggle P1.0 using exclusive-OR
 

@@ -395,3 +395,87 @@ Caused by: java.lang.IllegalArgumentException:
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-09-16 15:58:36.518
 !MESSAGE Indexed 'SimpleBlink' (1 sources, 5 headers) in 0.201 sec: 173 declarations; 607 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2017-10-08 23:11:00.078 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2017-10-08 23:11:09.570
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2017-10-08 23:11:09.592
+!MESSAGE debugServerDir=D:/Embedded/ccsv7/ccs_base/DebugServer
+
+!ENTRY com.ti.dvt.codegen.Activator 4 4 2017-10-08 23:11:19.091
+!MESSAGE Could not open D:\ccsv7\ccs_base\dvt\CodeGen\solutions\CodeGenCoverage.sol solution
+!STACK 0
+java.lang.Throwable
+	at com.ti.dvt.codegen.Activator.start(Activator.java:129)
+	at com.ti.dvt.codegen.CodeGenStartUp.earlyStartup(CodeGenStartUp.java:9)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-10-08 23:12:47.595 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2017-10-08 23:12:50.753
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2017-10-08 23:12:50.769
+!MESSAGE debugServerDir=D:/Embedded/ccsv7/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2017-10-08 23:12:59.243
+!MESSAGE Unexpected CCS exit detected [10/8/17 11:11 PM]!!!
+
+!ENTRY com.ti.dvt.codegen.Activator 4 4 2017-10-08 23:12:59.468
+!MESSAGE Could not open D:\ccsv7\ccs_base\dvt\CodeGen\solutions\CodeGenCoverage.sol solution
+!STACK 0
+java.lang.Throwable
+	at com.ti.dvt.codegen.Activator.start(Activator.java:129)
+	at com.ti.dvt.codegen.CodeGenStartUp.earlyStartup(CodeGenStartUp.java:9)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-10-08 23:13:26.754
+!MESSAGE An error occurred while downloading http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.jar. The cache file D:\Embedded\ccsv7\eclipse\p2\org.eclipse.equinox.p2.repository\cache\downloading\content196599758.jar could not be renamed to D:\Embedded\ccsv7\eclipse\p2\org.eclipse.equinox.p2.repository\cache\content196599758.jar.
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2017-10-08 23:13:28.141
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:984)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:559)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getServiceReference(BundleContextImpl.java:1011)
+	at org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper.getService(ServiceHelper.java:27)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getSharedPreferences(AbstractRepositoryManager.java:512)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.restoreRepositories(AbstractRepositoryManager.java:1016)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.getRepositoryProperty(AbstractRepositoryManager.java:564)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:686)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:151)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:129)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-10-08 23:13:28.375
+!MESSAGE An internal error occurred during: "Replace IU Job".
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.log(CCSAppCenter.java:452)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:420)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:364)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:240)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

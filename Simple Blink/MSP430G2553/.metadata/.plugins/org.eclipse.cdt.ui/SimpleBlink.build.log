@@ -5,7 +5,7 @@
 'Building file: ../blink.c'
 'Invoking: MSP430 Compiler'
 "D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/Embedded/ccsv7/ccs_base/msp430/include" --include_path="D:/Embedded/Labs/lab-2-blinking-leds-Veronicaw1013/Simple Blink/MSP430G2553/SimpleBlink" --include_path="D:/Embedded/ccsv7/tools/compiler/ti-cgt-msp430_16.9.3.LTS/include" --advice:power=all --define=__MSP430G2253__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="blink.d"  "../blink.c"
-"../blink.c", line 17: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blink.c", line 13: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
 'Finished building: ../blink.c'
 ' '
 'Building target: SimpleBlink.out'

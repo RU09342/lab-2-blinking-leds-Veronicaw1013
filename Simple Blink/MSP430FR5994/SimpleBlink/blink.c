@@ -25,7 +25,7 @@ void main(void) {
     P1DIR |= BIT1;                          // Set P1.1 to output direction
 
     for(;;) {
-        volatile unsigned int i;            // volatile to prevent optimization
+        volatile unsigned int i;            //create unsigned integer i
 
         P1OUT ^= BIT1;                      // Toggle P1.1 using exclusive-OR
 
