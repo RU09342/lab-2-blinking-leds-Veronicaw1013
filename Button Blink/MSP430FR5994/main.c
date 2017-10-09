@@ -18,8 +18,8 @@ void main(void)
     PM5CTL0 &= ~LOCKLPM5;//disable high impedance mode
     WDTCTL = WDTPW + WDTHOLD;      // stop watchdog timer 
     P1DIR |= BIT0 + BIT1;// sets pins 1.0 and 1.1 as outputs
-    P5DIR &= ~BIT5;//sets pin 1.5 as input
-    P5REN |= BIT5;// enable pin 1.5 resistor
+    P5DIR &= ~BIT5;//sets pin 5.5 as input
+    P5REN |= BIT5;// enable pin 5.5 resistor
     P5OUT |= BIT5;// tell the resistor to pull up
 
     while(1)//infinite loop
