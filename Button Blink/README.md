@@ -12,31 +12,29 @@ For the MSP430FR5994 and MSP430G2553,two functions were made that will be called
 
 void delay _ ms(unsigned int ms )//create a function that takes in an input ms
 
-{
+	{
 
-unsigned int i;//create integer i
+	unsigned int i;//create integer i
 
-for (i = 0; i < ms; i++)//start for loop, initialize i as 0, run if i < ms, increment i each iteration
+	for (i = 0; i < ms; i++)//start for loop, initialize i as 0, run if i < ms, increment i each iteration
 
-{
+	{
 
-_ _ delay _ cycles(500); //delay execution of next instruction by 500 cycles
-
-}
-
-}
+	__delay_cycles(500); //delay execution of next instruction by 500 cycles
+	}
+	}
 
 Next, do _ led was created which takes in an integer led, and an integer delay. This function allows the LED to blink. The function toggles the LED based on which LED was set on the input. It also calls on delay_ms to set the delay between blinks. 
 
 void do _ led( int led, int delay ) // create a function that takes in an input of an led and delay
 
-{
+	{
 
-    P1OUT ^= led;// sets which led to toggle
+    	P1OUT ^= led;// sets which led to toggle
     
-    delay _ ms( delay );// sets input to delay _ ms
+   	delay _ ms( delay );// sets input to delay _ ms
     
-}
+	}
 
 For the other boards only the delay _ ms function was used. 
 
@@ -58,37 +56,39 @@ Within the loop is a code to blink both LEDs on the boards. If the button is pre
 
 if (!(P5IN & BIT5))// if the button is pressed
 
-		{      
+	{      
 		
-            do_led( BIT1, 2000 );  // run do_led with input BIT1 and 2000
+        do_led( BIT1, 2000 );  // run do_led with input BIT1 and 2000
 	    
         }
 	
         else
 	
-		{              // Otherwise...
+	{              // Otherwise...
 		
-            do_led( BIT0, 1000 );    // run do_led with input BIT0 and 1000
+        do_led( BIT0, 1000 );    // run do_led with input BIT0 and 1000
+	
+	}
             
 or
 
 if (!(P1IN & BIT1))// if the button is pressed
 
-		{      
+	{      
 		
-            P1OUT ^= BIT0;//toggle PIN 1.0
+        P1OUT ^= BIT0;//toggle PIN 1.0
 	    
-               delay_ms( 2000 );  //sets input to delay_ms
+        delay_ms( 2000 );  //sets input to delay_ms
 	       
         }
 	
         else
 	
-		{              // Otherwise...
+	{              // Otherwise...
 		
-            P2OUT ^= BIT0;//toggle PIN 2.0
+        P2OUT ^= BIT0;//toggle PIN 2.0
 	    
-               delay_ms(1000); //sets input to delay_ms  
+        delay_ms(1000); //sets input to delay_ms  
 	       
         }
 
