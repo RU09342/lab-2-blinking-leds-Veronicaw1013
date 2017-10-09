@@ -11,20 +11,31 @@ Msp430.h is a general header file that includes all the header files for boards 
 For the MSP430FR5994 and MSP430G2553,two functions were made that will be called in the main function. First, delay _ ms was created that takes in an unsigned integer ms as an input. Within the function, an integer "i" is created to use for counting. A for loop is used which initializes "i" as 0, runs if i < the input ms, and "i" is incremented at each iteration. The function "delaycycles" was then used to delay the execution of the next instruction. This sets the delay of the LED blink.  
 
 void delay _ ms(unsigned int ms )//create a function that takes in an input ms
+
 {
+
 unsigned int i;//create integer i
+
 for (i = 0; i < ms; i++)//start for loop, initialize i as 0, run if i < ms, increment i each iteration
+
 {
+
 _ _ delay _ cycles(500); //delay execution of next instruction by 500 cycles
+
 }
+
 }
 
 Next, do _ led was created which takes in an integer led, and an integer delay. This function allows the LED to blink. The function toggles the LED based on which LED was set on the input. It also calls on delay_ms to set the delay between blinks. 
 
 void do _ led( int led, int delay ) // create a function that takes in an input of an led and delay
+
 {
+
     P1OUT ^= led;// sets which led to toggle
+    
     delay _ ms( delay );// sets input to delay _ ms
+    
 }
 
 For the other boards only the delay _ ms function was used. 
@@ -46,24 +57,39 @@ while(1){}
 Within the loop is a code to blink both LEDs on the boards. If the button is pressed it will toggle one of the LEDs at a delay specified by the delay _ ms function. If the button is not pressed, the other LED will toggle at a delay specified by delay _ ms. Generally, PxOUT contains the value to be output from the port. When I/O is configured to output mode: 0b = output is low, 1b = output is high. 
 
 if (!(P5IN & BIT5))// if the button is pressed
+
 		{      
+		
             do_led( BIT1, 2000 );  // run do_led with input BIT1 and 2000
+	    
         }
+	
         else
+	
 		{              // Otherwise...
+		
             do_led( BIT0, 1000 );    // run do_led with input BIT0 and 1000
             
 or
 
 if (!(P1IN & BIT1))// if the button is pressed
+
 		{      
+		
             P1OUT ^= BIT0;//toggle PIN 1.0
+	    
                delay_ms( 2000 );  //sets input to delay_ms
+	       
         }
+	
         else
+	
 		{              // Otherwise...
+		
             P2OUT ^= BIT0;//toggle PIN 2.0
+	    
                delay_ms(1000); //sets input to delay_ms  
+	       
         }
 
 
