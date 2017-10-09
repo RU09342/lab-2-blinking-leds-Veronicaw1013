@@ -38,32 +38,32 @@ do i--;
 
 while(i != 0);
 
-### Specific Code for Each Board
-MSP430G2553 where pin 1.6 is one of the LEDs-
+## Specific Code for Each Board
+### MSP430G2553 where pin 1.6 is one of the LEDs-
 
 Configure LED as output: P1DIR |= BIT6;
 
 Toggle LED: P1OUT ^= BIT6;
 
-MSP430FR6989 where pin 9.7 is one of the LEDs-
+### MSP430FR6989 where pin 9.7 is one of the LEDs-
 
 Configure LED as output: P9DIR |= BIT7; 
 
 Toggle LED: P9OUT ^= BIT7; 
 
-MSP430FR5994 where pin 1.1 is one of the LEDs-
+### MSP430FR5994 where pin 1.1 is one of the LEDs-
 
 Configure LED as output:  P1DIR |= BIT1; 
 
 Toggle LED: P1OUT ^= BIT1; 
 
-MSP430FR2311 where pin 1.1 is one of the LEDs-
+### MSP430FR2311 where pin 1.1 is one of the LEDs-
 
 Configure LED as output:  P1DIR |= 0x01; 
 
 Toggle LED: P1OUT ^= 0x01; 
 
-MSP430FR5529 where pin 1.1 is one of the LEDs-
+### MSP430FR5529 where pin 1.1 is one of the LEDs-
 Configure LED as output:  P1DIR |= 0x01; 
 Toggle LED: P1OUT ^= 0x01; 
 
