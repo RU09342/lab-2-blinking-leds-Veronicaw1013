@@ -2,7 +2,7 @@
 <link_info>
    <banner>MSP430 Linker PC v16.9.3.LTS</banner>
    <copyright>Copyright (c) 2003-2017 Texas Instruments Incorporated</copyright>
-   <link_time>0x59c6e760</link_time>
+   <link_time>0x59dae098</link_time>
    <link_errors>0x0</link_errors>
    <output_file>ButtonBlink.out</output_file>
    <entry_point>
@@ -544,7 +544,7 @@
          <size>0x193</size>
          <input_file_ref idref="fl-24"/>
       </object_component>
-      <object_component id="oc-40e">
+      <object_component id="oc-40f">
          <name>.debug_info</name>
          <load_address>0x589</load_address>
          <run_address>0x589</run_address>
@@ -558,7 +558,7 @@
          <size>0x107</size>
          <input_file_ref idref="fl-40"/>
       </object_component>
-      <object_component id="oc-3e8">
+      <object_component id="oc-3e7">
          <name>.debug_info</name>
          <load_address>0x7a7</load_address>
          <run_address>0x7a7</run_address>
@@ -620,7 +620,7 @@
          <size>0x3d</size>
          <input_file_ref idref="fl-40"/>
       </object_component>
-      <object_component id="oc-3e7">
+      <object_component id="oc-3e6">
          <name>.debug_line</name>
          <load_address>0x1a2</load_address>
          <run_address>0x1a2</run_address>
@@ -731,7 +731,7 @@
          <size>0xfa</size>
          <input_file_ref idref="fl-2"/>
       </object_component>
-      <object_component id="oc-45c">
+      <object_component id="oc-45d">
          <name>.debug_aranges</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
@@ -752,28 +752,28 @@
          <size>0x20</size>
          <input_file_ref idref="fl-24"/>
       </object_component>
-      <object_component id="oc-410">
+      <object_component id="oc-40e">
          <name>.debug_aranges</name>
          <load_address>0x60</load_address>
          <run_address>0x60</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-28"/>
       </object_component>
-      <object_component id="oc-3dc">
+      <object_component id="oc-3db">
          <name>.debug_aranges</name>
          <load_address>0x80</load_address>
          <run_address>0x80</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-40"/>
       </object_component>
-      <object_component id="oc-3e6">
+      <object_component id="oc-3e9">
          <name>.debug_aranges</name>
          <load_address>0xa0</load_address>
          <run_address>0xa0</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-48"/>
       </object_component>
-      <object_component id="oc-45d">
+      <object_component id="oc-45c">
          <name>.debug_pubnames</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
@@ -801,21 +801,21 @@
          <size>0x34</size>
          <input_file_ref idref="fl-24"/>
       </object_component>
-      <object_component id="oc-40f">
+      <object_component id="oc-410">
          <name>.debug_pubnames</name>
          <load_address>0x8b</load_address>
          <run_address>0x8b</run_address>
          <size>0x1c</size>
          <input_file_ref idref="fl-28"/>
       </object_component>
-      <object_component id="oc-3db">
+      <object_component id="oc-3dc">
          <name>.debug_pubnames</name>
          <load_address>0xa7</load_address>
          <run_address>0xa7</run_address>
          <size>0x2b</size>
          <input_file_ref idref="fl-40"/>
       </object_component>
-      <object_component id="oc-3e9">
+      <object_component id="oc-3e8">
          <name>.debug_pubnames</name>
          <load_address>0xd2</load_address>
          <run_address>0xd2</run_address>
@@ -1501,9 +1501,9 @@
             <object_component_ref idref="oc-3c7"/>
             <object_component_ref idref="oc-3be"/>
             <object_component_ref idref="oc-c6"/>
-            <object_component_ref idref="oc-40e"/>
+            <object_component_ref idref="oc-40f"/>
             <object_component_ref idref="oc-3da"/>
-            <object_component_ref idref="oc-3e8"/>
+            <object_component_ref idref="oc-3e7"/>
             <object_component_ref idref="oc-50d"/>
          </contents>
       </logical_group>
@@ -1520,7 +1520,7 @@
             <object_component_ref idref="oc-ca"/>
             <object_component_ref idref="oc-411"/>
             <object_component_ref idref="oc-3dd"/>
-            <object_component_ref idref="oc-3e7"/>
+            <object_component_ref idref="oc-3e6"/>
          </contents>
       </logical_group>
       <logical_group id="lg-4fe" display="never" color="cyan">
@@ -1568,12 +1568,12 @@
          <run_address>0x0</run_address>
          <size>0xc0</size>
          <contents>
-            <object_component_ref idref="oc-45c"/>
+            <object_component_ref idref="oc-45d"/>
             <object_component_ref idref="oc-407"/>
             <object_component_ref idref="oc-c7"/>
-            <object_component_ref idref="oc-410"/>
-            <object_component_ref idref="oc-3dc"/>
-            <object_component_ref idref="oc-3e6"/>
+            <object_component_ref idref="oc-40e"/>
+            <object_component_ref idref="oc-3db"/>
+            <object_component_ref idref="oc-3e9"/>
          </contents>
       </logical_group>
       <logical_group id="lg-506" display="never" color="cyan">
@@ -1582,13 +1582,13 @@
          <run_address>0x0</run_address>
          <size>0xf9</size>
          <contents>
-            <object_component_ref idref="oc-45d"/>
+            <object_component_ref idref="oc-45c"/>
             <object_component_ref idref="oc-408"/>
             <object_component_ref idref="oc-3bf"/>
             <object_component_ref idref="oc-c8"/>
-            <object_component_ref idref="oc-40f"/>
-            <object_component_ref idref="oc-3db"/>
-            <object_component_ref idref="oc-3e9"/>
+            <object_component_ref idref="oc-410"/>
+            <object_component_ref idref="oc-3dc"/>
+            <object_component_ref idref="oc-3e8"/>
          </contents>
       </logical_group>
       <logical_group id="lg-508" display="never" color="cyan">

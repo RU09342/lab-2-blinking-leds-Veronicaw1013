@@ -1,29 +1,35 @@
 #include <msp430.h> 
 
-void delay_ms(unsigned int ms ){// Not really a milliseconds delay!
-unsigned int i;
-for (i = 0; i < ms; i++){
-__delay_cycles(500);
+void delay_ms(unsigned int ms )//create a function that takes in an input ms
+{
+unsigned int i;//create integer i
+for (i = 0; i < ms; i++)//start for loop, initialize i as 0, run if i < ms, increment i each iteration
+{
+__delay_cycles(500);//delay execution of next instruction by 500 cycles
 }
 }
 
-void main(void) {
-   // PM5CTL0 &= ~LOCKLPM5;
-    WDTCTL = WDTPW + WDTHOLD;       // Hold the WDT (WatchDog Timer)
-    P1DIR |= BIT0;// Setup the appropriate output bits
-    P4DIR |= BIT7;
-    P2DIR &= ~BIT1;
-    P2REN ^= BIT1;
-    P2OUT ^= BIT1;
+void main(void)
+ {
+   
+    WDTCTL = WDTPW + WDTHOLD;     // stop watchdog timer    
+    P1DIR |= BIT0;// sets pins 1.0 as output
+    P4DIR |= BIT7;// sets pins 4.7 as output
+    P2DIR &= ~BIT1;//sets pin 2.1 as input
+    P2REN |= BIT1;// enable pin 2.1 resistor
+    P2OUT |= BIT1;// tell the resistor to pull up
 
-    while(1) {
-        if (!(P2IN & BIT1)){      // If not (port one input AND bit3 (sw1))
-            P1OUT ^= BIT0;
-               delay_ms( 2000 );   // Turn on LED 2
+    while(1) //infinite loop
+	{
+        if (!(P2IN & BIT1))// if the button is pressed
+		{      
+            P1OUT ^= BIT0;//toggle BIT0
+               delay_ms( 2000 );   //sets input to delay_ms
         }
-        else{              // Otherwise...
-            P4OUT ^= BIT7;
-               delay_ms(1000);   // Turn on LED 1
+        else
+{              // Otherwise...
+            P4OUT ^= BIT7;//toggle BIT7
+               delay_ms(1000);    //sets input to delay_ms 
         }
     }
 }
