@@ -1,25 +1,69 @@
-# Multiple Blink
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
+# Multiple Blink 
+## Veronica Williams, October 9, 2017, Code Updated: October 8, 2017 
+
+## Libraries for the MSP430
+Msp430.h is a general header file that includes all the header files for boards in the MSP430 family. When creating a new project there is a pull down menu that will allow you to choose which board you are actually using. 
+
+## General Format
+The watchdog timer must be turned off for the five boards. 
+
+WDTCTL = WDTPW | WDTHOLD;
+
+For the MSP430FR2311, MSP430FR5994, and MSP430FR6989, the GPIO power-on default high-impedance mode must also be disabled.
+
+PM5CTL0 &= ~LOCKLPM5;
+
+The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section.  Two integers "i" and "j" were created in order to use for counting.
+
+ int i =0;
+ 
+ int j=0;
+ 
+An infinite loop was also created so the code within the loop will run forever. 
+
+while(1){}
+  
+Inside the loop is where the two LEDs are toggled so they can blink on the boards. The various cases for each board can be seen in the next section. Both "i" and "j" are incremented first within the loop. If i > 30000, then "i" is reset and one of the LEDs is toggled. If j >10000, then "j" is reset and the other LED is toggled. Different values other than 30000 and 10000 could be used in order to get different blink speeds. 
+
+i ++;
+
+j++;
+
+if(i>30000)
+
+{i=0;P1OUT^=BIT6;}
+
+if(j>10000)
+
+{j=0;P1OUT^=BIT0;}
+
+## Specific Code for Each Board
+### MSP430G2553 where pins 1.6 and 1.0 are LEDs-
+
+Configure LEDs as outputs: P1DIR |= BIT6; P1DIR |= BIT0; 
+
+Toggle LEDs: P1OUT ^= BIT6; P1OUT^=BIT0;
+
+### MSP430FR6989 where pins 9.7 and 1.0 are LEDs-
+
+Configure LEDs as outputs: P9DIR |= BIT7; P1DIR |= BIT0;   
+
+Toggle LEDs: P9OUT ^= BIT7; P1OUT^=BIT0;
+
+### MSP430FR5994 where pin 1.1 and 1.0 are LEDs-
+
+Configure LEDs as outputs:  P1DIR |= BIT1; P1DIR |= BIT0;  
+
+Toggle LEDs: P1OUT ^= BIT1; P1OUT^=BIT0;
+
+### MSP430FR2311 where pin 1.0 and 2.0 are LEDs-
+
+Configure LEDs as outputs:  P1DIR |= 0x01; P2DIR |= BIT0; 
+
+Toggle LEDs: P1OUT ^= 0x01; P2OUT^=BIT0;
+
+### MSP430FR5529 where pin 1.0 and pin 4.7 are LEDs-
+Configure LEDs as outputs:  P1DIR |= 0x01;  P4DIR |= BIT7;  
+Toggle LEDs: P1OUT ^= 0x01; P4OUT^=BIT7;
 
 
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
-
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
-
-## Extra Work
-When you take a look at the development boards, you are limited to what is built into the platform.
-
-### Even More LEDs
-Since up to this point you should have hopefully noticed that you are simply just controlling each pin on your processor. So... what is keeping you from putting an LED on each pin? Can you actually control the speed of each of these LEDs?
-
-### Patterned Lights
-If you can control a ton of LEDs, what is keeping you from having a little fun? Why not try and make something like a moving face or other moving object in lights. *CAUTION* I would only do this if you have finished the rest of the lab.
-
-### UART Pattern Control
-If you have been using UART, could you set which LEDs are on or off based off some UART command? Would you want to send an Array over UART such as [1 0 1 0] or would you want to send a byte that corresponds to the status? Can you not only say which LEDs are on, but also tell them to blink at a particular rate if they were on (so LED1 Blink every 100ms)?
