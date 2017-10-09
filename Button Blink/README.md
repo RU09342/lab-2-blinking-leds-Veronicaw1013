@@ -1,21 +1,70 @@
-# Button Blink
-Now that you have looked at blinking the LED from some built in delay, but what if we wanted to control the state of the LED by a button? You may think "Why would I need a Microcontroller to perform the job of a switch?". And that is where you come in. The bare minimum for this part of the lab is to essentially replicate a switch with your development board.
+# Button Blink 
+## Veronica Williams, October 9, 2017, Code Updated: October 8, 2017 
 
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
+This code blinks two of the on-board LEDs at a 50% duty cycle for each of the MSP430 development boards.
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
+## Libraries for the MSP430
+Msp430.h is a general header file that includes all the header files for boards in the MSP430 family. When creating a new project there is a pull down menu that will allow you to choose which board you are actually using. 
 
-## Extra Work
-What can we do to make this a little bit more worthy of needing a microcontroller.
+## General Format
+The watchdog timer must be turned off for the five boards. 
 
-### Button Based Speed Control
-Much like the UART controlled speed, what if you could cycle between speeds based on a button press? The speed could progress through a cycle of "Off-Slow-Medium-Fast" looping back when you hit the end.
+WDTCTL = WDTPW | WDTHOLD;
 
-### Color Change
-What if upon a button press, the LED which was blinking changed. Some of the development boards contain two LEDs, so you could swap between a Red and a Green LED.
+For the MSP430FR2311, MSP430FR5994, and MSP430FR6989, the GPIO power-on default high-impedance mode must also be disabled.
+
+PM5CTL0 &= ~LOCKLPM5;
+
+The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section.  Two integers "i" and "j" were created in order to use for counting.
+
+ int i =0;
+ 
+ int j=0;
+ 
+An infinite loop was also created so the code within the loop will run forever. 
+
+while(1){}
+  
+Inside the loop is where the two LEDs are toggled so they can blink on the boards. The various cases for each board can be seen in the next section. Both "i" and "j" are incremented first within the loop. If i > 30000, then "i" is reset and one of the LEDs is toggled. If j >10000, then "j" is reset and the other LED is toggled. Different values other than 30000 and 10000 could be used in order to get different blink speeds. 
+
+i ++;
+
+j++;
+
+if(i>30000)
+
+{i=0;P1OUT^=BIT6;}
+
+if(j>10000)
+
+{j=0;P1OUT^=BIT0;}
+
+## Specific Code for Each Board
+### MSP430G2553 where pins 1.6 and 1.0 are LEDs-
+
+Configure LEDs as outputs: P1DIR |= BIT6; P1DIR |= BIT0; 
+
+Toggle LEDs: P1OUT ^= BIT6; P1OUT^=BIT0;
+
+### MSP430FR6989 where pins 9.7 and 1.0 are LEDs-
+
+Configure LEDs as outputs: P9DIR |= BIT7; P1DIR |= BIT0;   
+
+Toggle LEDs: P9OUT ^= BIT7; P1OUT^=BIT0;
+
+### MSP430FR5994 where pin 1.1 and 1.0 are LEDs-
+
+Configure LEDs as outputs:  P1DIR |= BIT1; P1DIR |= BIT0;  
+
+Toggle LEDs: P1OUT ^= BIT1; P1OUT^=BIT0;
+
+### MSP430FR2311 where pin 1.0 and 2.0 are LEDs-
+
+Configure LEDs as outputs:  P1DIR |= 0x01; P2DIR |= BIT0; 
+
+Toggle LEDs: P1OUT ^= 0x01; P2OUT^=BIT0;
+
+### MSP430FR5529 where pin 1.0 and pin 4.7 are LEDs-
+Configure LEDs as outputs:  P1DIR |= 0x01;  P4DIR |= BIT7;  
+Toggle LEDs: P1OUT ^= 0x01; P4OUT^=BIT7;
+
