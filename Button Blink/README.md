@@ -1,12 +1,32 @@
 # Button Blink 
 ## Veronica Williams, October 9, 2017, Code Updated: October 8, 2017 
 
-This code blinks two of the on-board LEDs at a 50% duty cycle for each of the MSP430 development boards.
+This code toggles one LED when the button is pressed and toggles another LED when the button is pressed. 
 
 ## Libraries for the MSP430
 Msp430.h is a general header file that includes all the header files for boards in the MSP430 family. When creating a new project there is a pull down menu that will allow you to choose which board you are actually using. 
 
 ## General Format
+
+For the MSP430FR5994,   ,two functions were made that will be called in the main function. First, delay_ms was created that takes in an unsigned integer ms as an input. Within the function, an integer "i" is created to use for counting. A for loop is used which initializes "i" as 0, runs if i < the input ms, and "i" is incremented at each iteration. The function __ delay_cycles was then used to delay the execution of the next instruction. This sets the delay of the LED blink.  
+
+void delay_ms(unsigned int ms )//create a function that takes in an input ms
+{
+unsigned int i;//create integer i
+for (i = 0; i < ms; i++)//start for loop, initialize i as 0, run if i < ms, increment i each iteration
+{
+__ delay_cycles(500);//delay execution of next instruction by 500 cycles
+}
+}
+
+Next, do_led was created which takes in an integer led, and an integer delay. This function allows the LED to blink. The function toggles the LED based on which LED was set on the input. It also calls on delay_ms to set the delay between blinks. 
+
+void do_led( int led, int delay ) // create a function that takes in an input of an led and delay
+{
+    P1OUT ^= led;// sets which led to toggle
+    delay_ms( delay );// sets input to delay_ms
+}
+
 The watchdog timer must be turned off for the five boards. 
 
 WDTCTL = WDTPW | WDTHOLD;
@@ -15,29 +35,12 @@ For the MSP430FR2311, MSP430FR5994, and MSP430FR6989, the GPIO power-on default 
 
 PM5CTL0 &= ~LOCKLPM5;
 
-The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section.  Two integers "i" and "j" were created in order to use for counting.
-
- int i =0;
- 
- int j=0;
+The LEDs were configured as outputs depending on the pin numbers for each of the boards. The different cases for each board can be seen in the next section. The button was also set as an input. The different cases for each board can also be seen in the next section.
  
 An infinite loop was also created so the code within the loop will run forever. 
 
 while(1){}
-  
-Inside the loop is where the two LEDs are toggled so they can blink on the boards. The various cases for each board can be seen in the next section. Both "i" and "j" are incremented first within the loop. If i > 30000, then "i" is reset and one of the LEDs is toggled. If j >10000, then "j" is reset and the other LED is toggled. Different values other than 30000 and 10000 could be used in order to get different blink speeds. 
 
-i ++;
-
-j++;
-
-if(i>30000)
-
-{i=0;P1OUT^=BIT6;}
-
-if(j>10000)
-
-{j=0;P1OUT^=BIT0;}
 
 ## Specific Code for Each Board
 ### MSP430G2553 where pins 1.6 and 1.0 are LEDs-
