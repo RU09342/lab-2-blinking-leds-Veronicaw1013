@@ -67,5 +67,9 @@ Toggle LED: P1OUT ^= 0x01;
 Configure LED as output:  P1DIR |= 0x01; 
 Toggle LED: P1OUT ^= 0x01; 
 
+## References
+
+When creating a new project in code composer studio, instead of creating an empty project, the "Blink the LED" option was chosen. This produced premade code to use. 
+
 
 
