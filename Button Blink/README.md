@@ -133,3 +133,6 @@ Configure button as input: P2DIR &= ~BIT1; P2REN |= BIT1; P2OUT |= BIT1;
 
 Toggle LEDs: P1OUT ^= 0x01; P4OUT^=BIT7;
 
+## Extra Work
+When the button is pressed, the LED that was blinking changed instead of just one LED blinking.
+
